@@ -438,6 +438,14 @@ td {
 
 
 /*CONTACT PAGE*/
+
+.work-pic {
+    display: flex;
+    margin: 20px;
+    width: 151vh;
+    max-height: 200px;
+}
+
 .contact-me {
     display: flex;
     flex-direction: row;

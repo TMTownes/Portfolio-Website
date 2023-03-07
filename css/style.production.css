@@ -584,6 +584,16 @@ td {
 
 
 /*CONTACT PAGE*/
+
+.work-pic {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20px;
+    width: 151vh;
+    max-height: 200px;
+}
+
 .contact-me {
     display: -webkit-box;
     display: -ms-flexbox;
