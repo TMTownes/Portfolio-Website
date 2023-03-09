@@ -440,25 +440,27 @@ td {
 /*CONTACT PAGE*/
 
 .work-pic {
-    display: flex;
+    align-items: center;
     margin: 20px;
-    width: 151vh;
+    width: auto;
     max-height: 200px;
 }
 
 .contact-me {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     font-size: larger;
+    justify-content: center;
+    align-items: center;
 }
 
-#contact-form {
+.contact-form {
+    display: flex;
+    flex-direction: column;
     font-family: 'Barlow Semi Condensed', sans-serif;
     background-color: var(--tertiary-color);
-    justify-content: flex-start;
     align-items: inherit;
     padding: 16px;
-    height: 50px;
 }
 
 .contact-info {
@@ -482,7 +484,9 @@ td {
     padding: 20px; /*inner spacing to all sides*/
     margin: 20px; /*outer spacing to all sides*/
     /*border: 50px solid black; attributes: thickness, type, color*/
-    height: 50vh;
+    justify-content: center;
+    align-items: stretch;
+    height: auto;
     background-color: var(--tertiary-color);
 
 }
