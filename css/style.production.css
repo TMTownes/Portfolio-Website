@@ -586,11 +586,11 @@ td {
 /*CONTACT PAGE*/
 
 .work-pic {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: 20px;
-    width: 151vh;
+    width: auto;
     max-height: 200px;
 }
 
@@ -598,24 +598,33 @@ td {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     font-size: larger;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
-#contact-form {
+.contact-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     font-family: 'Barlow Semi Condensed', sans-serif;
     background-color: #5c6d70;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
     -webkit-box-align: inherit;
         -ms-flex-align: inherit;
             align-items: inherit;
     padding: 16px;
-    height: 50px;
 }
 
 .contact-info {
@@ -643,7 +652,13 @@ td {
     padding: 20px; /*inner spacing to all sides*/
     margin: 20px; /*outer spacing to all sides*/
     /*border: 50px solid black; attributes: thickness, type, color*/
-    height: 50vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    height: auto;
     background-color: #5c6d70;
 
 }
