@@ -242,9 +242,9 @@ nav.navigation-list a:before {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px;
-    padding: 10px;
-    width: 100%;
+    margin: 10px;
+    padding: 20px;
+    width: auto;
     border-spacing: 20px;
     background-color: var(--tertiary-color);
     border-color: var(--dark-text);
@@ -254,11 +254,16 @@ nav.navigation-list a:before {
 }
 
 th {
-    padding: 16px;
+    padding: 10px;
 }
 
 td {
-    padding: 50px;
+    padding: 20px;
+}
+
+tfoot {
+    border: var(--med-orange);
+    border-radius: 5px;
 }
 
 .about-table:hover {
@@ -273,12 +278,15 @@ td {
     justify-content: center;
     align-items: center;
     margin: auto;
+    padding: 50px;
     max-width: 1200px;
     position: relative;
     z-index: 2;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
 }
 
-.about-pic__tri {
+/*.about-pic__tri {
     display: block;
     background-image: url('img/goldentri2.svg') no-repeat;
     background-size: contain;
@@ -288,7 +296,7 @@ td {
     margin: 10px;
     padding: 0;
     background-position: center ;
-}
+}*/
 
 
 @keyframes rotate-right {
