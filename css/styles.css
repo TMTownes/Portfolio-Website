@@ -242,8 +242,8 @@ nav.navigation-list a:before {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px;
-    padding: 10px;
+    margin: 50px;
+    padding: 25px;
     width: auto;
     border-spacing: 20px;
     background-color: var(--tertiary-color);
@@ -272,7 +272,7 @@ td {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: 25px;
     max-width: 1200px;
     position: relative;
     z-index: 2;
