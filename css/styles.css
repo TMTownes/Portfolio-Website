@@ -242,8 +242,8 @@ nav.navigation-list a:before {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 50px;
-    padding: 25px;
+    margin: 10px;
+    padding: 20px;
     width: auto;
     border-spacing: 20px;
     background-color: var(--tertiary-color);
@@ -254,11 +254,16 @@ nav.navigation-list a:before {
 }
 
 th {
-    padding: 16px;
+    padding: 10px;
 }
 
 td {
-    padding: 50px;
+    padding: 20px;
+}
+
+tfoot {
+    border: var(--med-orange);
+    border-radius: 5px;
 }
 
 .about-table:hover {
@@ -272,11 +277,13 @@ td {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 25px;
+    margin: auto;
+    padding: 50px;
     max-width: 1200px;
     position: relative;
     z-index: 2;
     font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
 }
 
 /*.about-pic__tri {
