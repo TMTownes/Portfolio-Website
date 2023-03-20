@@ -276,6 +276,7 @@ td {
     max-width: 1200px;
     position: relative;
     z-index: 2;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .about-pic__tri {
