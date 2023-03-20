@@ -279,7 +279,7 @@ td {
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
-.about-pic__tri {
+/*.about-pic__tri {
     display: block;
     background-image: url('img/goldentri2.svg') no-repeat;
     background-size: contain;
@@ -289,7 +289,7 @@ td {
     margin: 10px;
     padding: 0;
     background-position: center ;
-}
+}*/
 
 
 @keyframes rotate-right {
