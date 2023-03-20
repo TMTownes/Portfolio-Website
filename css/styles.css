@@ -244,7 +244,7 @@ nav.navigation-list a:before {
     align-items: center;
     margin: 20px;
     padding: 10px;
-    width: 100%;
+    width: auto;
     border-spacing: 20px;
     background-color: var(--tertiary-color);
     border-color: var(--dark-text);
