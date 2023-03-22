@@ -447,39 +447,46 @@ tfoot {
 
 /*CONTACT PAGE*/
 
-.work-pic {
-    align-items: center;
-    margin: 20px;
-    width: auto;
-    max-height: 200px;
-}
 
 .contact-me {
     display: flex;
     flex-direction: column;
     font-size: larger;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    background-image: url("/Users/tt/Documents/GitHub/site-js/img/laptop-macbook.jpeg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    z-index: 0;
 }
 
 .contact-form {
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     font-family: 'Barlow Semi Condensed', sans-serif;
     background-color: var(--tertiary-color);
     align-items: inherit;
+    align-content: flex-end;
     padding: 16px;
 }
 
 .contact-info {
-    margin: 20px;
-    padding: 16px;
+    display: inline-block;
+    margin: 5% 0% 0% 5%;
+    padding: 1%;
     background-color: var(--tertiary-color);
-    height: 50vh;
-    width: 250px;
+    height: auto;
     text-align: justify;
-    justify-content: center;
+    justify-content: space-between;
+    align-content:space-around;
     align-items: center;
+    position: absolute;
+    left: 20%;
+    top: 14%;
+    transform: translate(-7%,-7%);
+    z-index: 1;
 }
 
 .contact-info:hover {
@@ -489,20 +496,37 @@ tfoot {
 }
 
 .info {
-    padding: 20px; /*inner spacing to all sides*/
-    margin: 20px; /*outer spacing to all sides*/
+    display: inline-block;
+    padding: 2%; /*inner spacing to all sides*/
+    margin: .7% 2% 2% 2%; /*outer spacing to all sides*/
     /*border: 50px solid black; attributes: thickness, type, color*/
     justify-content: center;
     align-items: stretch;
     height: auto;
     background-color: var(--tertiary-color);
-
+    position: absolute;
+    left: 33%;
+    top: 90%;
+    transform: translate(-50%,-50%);
+    
 }
 
 .info:hover {
     cursor: pointer;
     opacity: .7;
     color: var(--med-orange);
+}
+
+/*If screen size is 820px or less, change position of info boxes*/
+@media screen and (max-width: 820px) {
+    .contact-info {
+        margin: 35% 10% 10% 1%;
+    }
+    
+    .info {
+        margin: -3% -30% 25% 15%;
+    }
+    
 }
 
 /*WORK PAGE*/

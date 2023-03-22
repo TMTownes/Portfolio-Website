@@ -593,14 +593,6 @@ tfoot {
 
 /*CONTACT PAGE*/
 
-.work-pic {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 20px;
-    width: auto;
-    max-height: 200px;
-}
 
 .contact-me {
     display: -webkit-box;
@@ -611,18 +603,21 @@ tfoot {
         -ms-flex-direction: column;
             flex-direction: column;
     font-size: larger;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    background-image: url("/Users/tt/Documents/GitHub/site-js/img/laptop-macbook.jpeg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    z-index: 0;
 }
 
 .contact-form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: inline-block;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -632,22 +627,32 @@ tfoot {
     -webkit-box-align: inherit;
         -ms-flex-align: inherit;
             align-items: inherit;
+    -ms-flex-line-pack: end;
+        align-content: flex-end;
     padding: 16px;
 }
 
 .contact-info {
-    margin: 20px;
-    padding: 16px;
+    display: inline-block;
+    margin: 5% 0% 0% 5%;
+    padding: 1%;
     background-color: #5c6d70;
-    height: 50vh;
-    width: 250px;
+    height: auto;
     text-align: justify;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack:distribute;
+        align-content:space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    position: absolute;
+    left: 20%;
+    top: 14%;
+    -webkit-transform: translate(-7%,-7%);
+            transform: translate(-7%,-7%);
+    z-index: 1;
 }
 
 .contact-info:hover {
@@ -657,8 +662,9 @@ tfoot {
 }
 
 .info {
-    padding: 20px; /*inner spacing to all sides*/
-    margin: 20px; /*outer spacing to all sides*/
+    display: inline-block;
+    padding: 2%; /*inner spacing to all sides*/
+    margin: .7% 2% 2% 2%; /*outer spacing to all sides*/
     /*border: 50px solid black; attributes: thickness, type, color*/
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -668,13 +674,30 @@ tfoot {
             align-items: stretch;
     height: auto;
     background-color: #5c6d70;
-
+    position: absolute;
+    left: 33%;
+    top: 90%;
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    
 }
 
 .info:hover {
     cursor: pointer;
     opacity: .7;
     color: #ffc812;
+}
+
+/*If screen size is 820px or less, change position of info boxes*/
+@media screen and (max-width: 820px) {
+    .contact-info {
+        margin: 35% 10% 10% 1%;
+    }
+    
+    .info {
+        margin: -3% -30% 25% 15%;
+    }
+    
 }
 
 /*WORK PAGE*/
