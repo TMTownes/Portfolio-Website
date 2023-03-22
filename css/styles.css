@@ -517,7 +517,7 @@ tfoot {
     color: var(--med-orange);
 }
 
-/*If s reen size is 820px or less, change position of info boxes*/
+/*If screen size is 820px or less, change position of info boxes*/
 @media screen and (max-width: 820px) {
     .contact-info {
         margin: 35% 10% 10% 1%;
