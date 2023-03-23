@@ -454,7 +454,7 @@ tfoot {
     font-size: larger;
     justify-content: space-around;
     align-items: center;
-    background-image: url("/img/laptop-macbook.jpeg");
+    background-image: url("./img/laptop-macbook.jpeg");
     background-color: #cccccc;
     background-repeat: no-repeat;
     background-size: cover;
