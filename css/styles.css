@@ -517,7 +517,7 @@ tfoot {
 }
 
 /*If screen size is 820px or less, change position of info boxes*/
-@media screen and (max-width: 820px) {
+@media all and (max-width: 820px) {
     .contact-info {
         margin: 35% 10% 10% 1%;
         height: auto;
