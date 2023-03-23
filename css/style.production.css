@@ -639,9 +639,9 @@ tfoot {
     background-color: #5c6d70;
     height: auto;
     text-align: justify;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -ms-flex-line-pack:distribute;
         align-content:space-around;
     -webkit-box-align: center;
@@ -652,7 +652,6 @@ tfoot {
     top: 14%;
     -webkit-transform: translate(-7%,-7%);
             transform: translate(-7%,-7%);
-    z-index: 1;
 }
 
 .contact-info:hover {
@@ -692,6 +691,7 @@ tfoot {
 @media screen and (max-width: 820px) {
     .contact-info {
         margin: 35% 10% 10% 1%;
+        height: auto;
     }
     
     .info {
