@@ -531,28 +531,58 @@ tfoot {
     
 }*/
 
-/*Extra small devices (phones, 600px and down)*/
-@media only screen and (max-width:600px) {
-    .contact-me {
-        grid-template-columns: auto;
-        /*margin: 35% 10% 10% 1%;*/
-        gap: 5px;
+/*Extra, extra small devices (small phones, under 300px)*/
+/*Doesn't work for Galaxy fold (info too wide)*/
+@media only screen and (max-width:300px) {
+    .contact-info {
+        margin: 60% 20% 20% -7%;
         width: auto;
         min-height: auto;
+        font-size: smaller;
     }
-    .contact-info {
-        margin: 35% 10% 10% 1%;
+    .info {
+        margin: 40% -80% -900% 20%;
         width: auto;
+        min-height: auto;
+        font-size:xx-small;
+    }
+    .h2 {
+        font-size: x-small;
+    }
+}
+
+/*Extra small devices (portrait tablets and small phones, under 390px)*/
+@media only screen and (min-width:390px){
+    .contact-info {
+        margin: 30% 20% 20% -1%;
+        width: 500px;
         min-height: auto;
     }
     .info {
-        margin: 10% -45% -90% 17%;
+        margin: 0% -40% -50% 17%;
         width: auto;
         min-height: auto;
     }
 }
+/*Extra small devices (portrait tablets and small phones, between 390px and 500px)*/
+@media only screen and (min-width:390px) and (max-width:500px){
+    .contact-info {
+        margin: 30% 20% 20% -1%;
+        width: auto;
+        min-height: auto;
+    }
+    .info {
+        margin: 0% -40% -50% 17%;
+        width: auto;
+        min-height: auto;
+    }
+}
+
+/*Add for min-width: 390px and min-height:740px*/
+
 /*Small devices (portrait tablets and large phones, 600px and up)*/
-@media only screen and (min-width:600px) {
+/*Doesn't work for Surface Duo*/
+@media only screen and (min-width:500px) and (max-width:600px) {
     .contact-info {
         margin: 20% 10% 10% 15%;
         width: auto;
@@ -565,15 +595,36 @@ tfoot {
     }
 }
 
-/*Medium devices (landscape tablets, 768px and up)*/
-@media only screen and (min-width:768px) {
+/*Extra small devices (phones, 600px and down)*/
+@media only screen and (min-width:600px) and (max-width:768px){
+    .contact-me {
+        grid-template-columns: auto;
+        /*margin: 35% 10% 10% 1%;*/
+        gap: 5px;
+        width: auto;
+        min-height: auto;
+    }
     .contact-info {
-        margin: 10% 10% 10% 10%;
+        margin: 25% 10% 10% 15%;
         width: auto;
         min-height: auto;
     }
     .info {
-        margin: 0% -40% -40% 5%;
+        margin: 10% -45% -90% 17%;
+        width: auto;
+        min-height: auto;
+    }
+}
+
+/*Medium devices (landscape tablets, 768px and up)*/
+@media only screen and (min-width:768px) {
+    .contact-info {
+        margin: 10% 10% 10% 15%;
+        width: auto;
+        min-height: auto;
+    }
+    .info {
+        margin: -10% -40% -40% 18%;
         width: auto;
         min-height: auto;
     }
