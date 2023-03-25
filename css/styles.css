@@ -533,7 +533,7 @@ tfoot {
 
 /*Extra, extra small devices (small phones, under 300px)*/
 /*Doesn't work for Galaxy fold (info too wide)*/
-@media only screen and (max-width:300px) {
+@media only screen and (min-width:300px) {
     .contact-info {
         margin: 60% 20% 20% -7%;
         width: auto;
@@ -552,7 +552,7 @@ tfoot {
 }
 
 /*Extra small devices (portrait tablets and small phones, under 390px)*/
-@media only screen and (min-width:390px){
+@media only screen and (min-width:300px) and (max-width:390px) {
     .contact-info {
         margin: 30% 20% 20% -1%;
         width: 500px;
@@ -617,7 +617,7 @@ tfoot {
 }
 
 /*Medium devices (landscape tablets, 768px and up)*/
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:768px) and (max-width:992px) {
     .contact-info {
         margin: 10% 10% 10% 15%;
         width: auto;
@@ -631,7 +631,7 @@ tfoot {
 }
 
 /*Large devices (laptops/desktops, 992px and up)*/
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:992px) and (max-width:1200px){
     .contact-info {
         margin: 5% 55% 100% 10%;
         width: 300px;
