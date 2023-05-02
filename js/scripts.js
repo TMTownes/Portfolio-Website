@@ -43,13 +43,15 @@
     //telephone validation
     function validateTelephone(){
         let tel = telephoneInput.value;
-        let re = '\d{3}[\-]\d{3}[\-]\d{4}';
+        let re = /\d{3}[\-]\d{3}[\-]\d{4}/gm;
+
+        console.log(tel, 'ok');    
 
         if (!tel){
             showErrorMessage(telephoneInput, 'Phone number is a required field.');
             return false;
         }
-        if (!tel.re){
+        if (!tel.match(re)){
             showErrorMessage(telephoneInput, 'Please enter a valid phone number.');
             return false;
         }
@@ -89,8 +91,8 @@
         }
     })
 
-    emailInput.addEventListener('input', validateEmail);
-    telephoneInput.addEventListener('input',validateTelephone);
-    messageInput.addEventListener('input',validateMessage);
+    emailInput.addEventListener('blur', validateEmail); //Error message showing after typing
+    telephoneInput.addEventListener('blur',validateTelephone);
+    messageInput.addEventListener('blur',validateMessage);
 
 })();
