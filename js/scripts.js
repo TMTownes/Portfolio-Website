@@ -84,6 +84,9 @@
         return isValidEmail && isValidTelephone && isValidMessage;
     }
 
+    //showModal() with showDialog() for subscription button
+
+
     form.addEventListener('submit', (e)=> {
         e.preventDefault();
         if (validateForm()){
@@ -96,3 +99,4 @@
     messageInput.addEventListener('blur',validateMessage);
 
 })();
+
