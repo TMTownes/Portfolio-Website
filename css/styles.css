@@ -492,7 +492,12 @@ tfoot {
     align-items: inherit;
     align-content: flex-end;
     padding: 16px;
-    
+}
+
+.error-message {
+    color: orangered;
+    font-weight: bolder;
+
 }
 
 .contact-info {
@@ -526,12 +531,9 @@ tfoot {
 }
 
 .info {
-    /* display: inline-block; */
     padding: 10px; /*inner spacing to all sides*/
     margin: 0; /*outer spacing to all sides*/
     border: 2px solid black; /*attributes: thickness, type, color */
-    /* justify-content: center;
-    align-items: stretch; */
     height: auto;
     background-color: var(--tertiary-color);
     position: absolute;
