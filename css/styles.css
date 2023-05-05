@@ -681,27 +681,10 @@ tfoot {
 } */
 
 /*WORK PAGE*/
-.bucket-img{
-    width: 200px;
-    height: auto;
-    padding: 5px;
-}
-
-.bucket-img:hover{
-    opacity: 80%;
-}
-
-.work-link {
-    padding: 20px;
-    margin: 20px;
-    float: right;
-}
-
 .grid__item {
 /*start grid fallback*/    
     display: inline-block;
     width: 35%;
-
 }
 
 .grid__item:hover{
