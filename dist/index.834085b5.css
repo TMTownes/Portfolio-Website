@@ -95,6 +95,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 .page-footer {
   clear: both;
   text-align: center;
+  position: center;
   flex-direction: column;
   display: flex;
 }
@@ -278,110 +279,6 @@ tfoot {
   }
 }
 
-#airplane1, #airplane2 {
-  -webkit-transform: var(--threeDObject);
-  transform: var(--threeDObject);
-  -webkit-transform-origin: var(--originSize);
-  transform-origin: var(--originSize);
-  transform: var(--threeDObject);
-  animation: 60s linear infinite rotate-right;
-}
-
-#countryObjects {
-  -webkit-transform: var(--threeDObject);
-  transform: var(--threeDObject);
-  -webkit-transform-origin: var(--originSize);
-  transform-origin: var(--originSize);
-  transform: var(--threeDObject);
-  animation: 240s linear infinite rotate-right;
-}
-
-#globe {
-  -webkit-transform: var(--threeDObject);
-  transform: var(--threeDObject);
-  animation: linear infinite hover;
-}
-
-#floatingGlobe {
-  -webkit-transform: var(--threeDObject);
-  transform: var(--threeDObject);
-  -webkit-transform-origin: var(--originSize);
-  transform-origin: var(--originSize);
-  transform: var(--threeDObject);
-  animation: 360s linear infinite rotate-left;
-}
-
-#cloud1 {
-  -webkit-transform: var(--threeDObject);
-  transform: var(--threeDObject);
-  animation: 3s linear 1s infinite hover;
-}
-
-#cloud2 {
-  -webkit-transform: var(--threeDObject);
-  transform: var(--threeDObject);
-  animation: 3s linear 2s infinite hover;
-}
-
-#cloud3 {
-  -webkit-transform: var(--threeDObject);
-  transform: var(--threeDObject);
-  animation: 3s linear 3s infinite hover;
-}
-
-#windmill {
-  -webkit-transform: var(--threeDObject);
-  transform: var(--threeDObject);
-  transform-origin: 331px 201px;
-  transform: var(--threeDObject);
-  animation: 3s linear infinite rotate-right;
-}
-
-#circle1 {
-  -webkit-transform: var(--threeDObject);
-  transform: var(--threeDObject);
-  -webkit-transform-origin: var(--originSize);
-  transform-origin: var(--originSize);
-  transform: var(--threeDObject);
-  animation: 12s linear infinite rotate-right;
-}
-
-#circle2 {
-  -webkit-transform: var(--threeDObject);
-  transform: var(--threeDObject);
-  -webkit-transform-origin: var(--originSize);
-  transform-origin: var(--originSize);
-  transform: var(--threeDObject);
-  animation: 24s linear infinite rotate-left;
-}
-
-#circle3 {
-  -webkit-transform: var(--threeDObject);
-  transform: var(--threeDObject);
-  -webkit-transform-origin: var(--originSize);
-  transform-origin: var(--originSize);
-  transform: var(--threeDObject);
-  animation: 12s linear infinite rotate-right;
-}
-
-#circle4 {
-  -webkit-transform: var(--threeDObject);
-  transform: var(--threeDObject);
-  -webkit-transform-origin: var(--originSize);
-  transform-origin: var(--originSize);
-  transform: var(--threeDObject);
-  animation: 24s linear infinite rotate-left;
-}
-
-#circle5 {
-  -webkit-transform: var(--threeDObject);
-  transform: var(--threeDObject);
-  -webkit-transform-origin: var(--originSize);
-  transform-origin: var(--originSize);
-  transform: var(--threeDObject);
-  animation: 12s linear infinite rotate-right;
-}
-
 #about-pic__swirl {
   justify-content: center;
   -webkit-box-align: left;
@@ -422,6 +319,7 @@ tfoot {
 
 .contact-form {
   background-color: var(--tertiary-color);
+  opacity: .75;
   -webkit-box-align: inherit;
   -ms-flex-align: inherit;
   align-items: inherit;
