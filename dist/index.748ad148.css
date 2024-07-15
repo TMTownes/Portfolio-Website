@@ -32,13 +32,13 @@ body {
 h1 {
   justify-content: space-between;
   margin: 0 auto;
-  font-size: 30px;
+  font-size: 50px;
   font-weight: 700;
 }
 
 h2 {
   margin: 20px;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 700;
 }
 
@@ -94,6 +94,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 .page-footer {
   clear: both;
   text-align: center;
+  position: center;
   flex-direction: column;
   display: flex;
 }
@@ -129,7 +130,12 @@ button:hover, button:focus, .button:hover, .button:focus {
   display: inline-block;
 }
 
+.navigation-list__item {
+  font-size: 30px;
+}
+
 .navigation-list__item--active {
+  font-size: 30px;
   text-decoration: none;
 }
 
@@ -159,7 +165,7 @@ nav.navigation-list a:before {
 
 .page-header__item-img {
   background-color: #0000;
-  width: 40px;
+  width: 50px;
   height: 40px;
 }
 
@@ -171,26 +177,32 @@ nav.navigation-list a:before {
 .profile {
   float: center;
   background-color: var(--tertiary-color);
+  opacity: .75;
   background-size: contain;
   border-radius: 10px;
+  align-items: center;
   max-width: 700px;
   min-height: 500px;
-  margin: 10px auto;
-  padding: 20px;
+  margin: 20px auto;
+  padding: 80px;
 }
 
 .profile__pic {
   float: left;
+  justify-content: auto;
   border-radius: 25%;
-  width: 300px;
-  margin-right: 40px;
+  width: 80%;
+  height: auto;
+  margin-bottom: 20px;
+  margin-left: 40px;
+  margin-right: 10px;
 }
 
 .about-table {
   border-spacing: 20px;
   background-color: var(--tertiary-color);
+  opacity: .75;
   border-color: var(--dark-text);
-  position: center;
   border-radius: 5px;
   flex-direction: column;
   justify-content: center;
@@ -199,7 +211,8 @@ nav.navigation-list a:before {
   margin: 25px;
   padding: 20px;
   font-weight: 900;
-  display: run-in;
+  display: flex;
+  position: relative;
 }
 
 th {
@@ -221,7 +234,14 @@ tfoot {
   color: var(--med-orange);
 }
 
+.about-me {
+  display: relative;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .about-overlay {
+  position: center;
   z-index: 2;
   text-align: center;
   flex-direction: column;
@@ -232,7 +252,22 @@ tfoot {
   padding: 50px;
   font-family: Georgia, Times New Roman, Times, serif;
   display: flex;
-  position: relative;
+}
+
+.about-file {
+  float: left;
+  margin-left: 10px;
+}
+
+.about-pic {
+  float: left;
+  justify-content: relative;
+  border-radius: 25%;
+  width: 500px;
+  height: auto;
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 @keyframes rotate-right {
@@ -267,89 +302,6 @@ tfoot {
   100% {
     transform: translateY(0%);
   }
-}
-
-#airplane1, #airplane2 {
-  transform: var(--threeDObject);
-  transform-origin: var(--originSize);
-  transform: var(--threeDObject);
-  animation: 60s linear infinite rotate-right;
-}
-
-#countryObjects {
-  transform: var(--threeDObject);
-  transform-origin: var(--originSize);
-  transform: var(--threeDObject);
-  animation: 240s linear infinite rotate-right;
-}
-
-#globe {
-  transform: var(--threeDObject);
-  animation: linear infinite hover;
-}
-
-#floatingGlobe {
-  transform: var(--threeDObject);
-  transform-origin: var(--originSize);
-  transform: var(--threeDObject);
-  animation: 360s linear infinite rotate-left;
-}
-
-#cloud1 {
-  transform: var(--threeDObject);
-  animation: 3s linear 1s infinite hover;
-}
-
-#cloud2 {
-  transform: var(--threeDObject);
-  animation: 3s linear 2s infinite hover;
-}
-
-#cloud3 {
-  transform: var(--threeDObject);
-  animation: 3s linear 3s infinite hover;
-}
-
-#windmill {
-  transform: var(--threeDObject);
-  transform-origin: 331px 201px;
-  transform: var(--threeDObject);
-  animation: 3s linear infinite rotate-right;
-}
-
-#circle1 {
-  transform: var(--threeDObject);
-  transform-origin: var(--originSize);
-  transform: var(--threeDObject);
-  animation: 12s linear infinite rotate-right;
-}
-
-#circle2 {
-  transform: var(--threeDObject);
-  transform-origin: var(--originSize);
-  transform: var(--threeDObject);
-  animation: 24s linear infinite rotate-left;
-}
-
-#circle3 {
-  transform: var(--threeDObject);
-  transform-origin: var(--originSize);
-  transform: var(--threeDObject);
-  animation: 12s linear infinite rotate-right;
-}
-
-#circle4 {
-  transform: var(--threeDObject);
-  transform-origin: var(--originSize);
-  transform: var(--threeDObject);
-  animation: 24s linear infinite rotate-left;
-}
-
-#circle5 {
-  transform: var(--threeDObject);
-  transform-origin: var(--originSize);
-  transform: var(--threeDObject);
-  animation: 12s linear infinite rotate-right;
 }
 
 #about-pic__swirl {
@@ -390,6 +342,7 @@ tfoot {
 
 .contact-form {
   background-color: var(--tertiary-color);
+  opacity: .75;
   align-items: inherit;
   align-content: flex-end;
   padding: 16px;
@@ -403,6 +356,7 @@ tfoot {
 
 .contact-info {
   background-color: var(--tertiary-color);
+  opacity: .75;
   border: 2px solid #000;
   width: 300px;
   height: auto;
@@ -427,6 +381,7 @@ tfoot {
 
 .info {
   background-color: var(--tertiary-color);
+  opacity: .75;
   border: 2px solid #000;
   height: auto;
   margin: 0;
