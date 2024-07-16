@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "express": "^4.19.2"
+    },
+  
+
+  "scripts": {
+    "serve": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  }
+}
