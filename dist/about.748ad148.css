@@ -398,6 +398,129 @@ tfoot {
   color: var(--med-orange);
 }
 
+@media only screen and (width <= 820px) {
+  .contact-info {
+    height: auto;
+    margin: 35% 10% 10% 1%;
+  }
+
+  .info {
+    margin: -3% -30% 25% 15%;
+  }
+}
+
+@media only screen and (width >= 300px) {
+  .contact-info {
+    width: auto;
+    min-height: auto;
+    margin: 60% 20% 20% -7%;
+    font-size: smaller;
+  }
+
+  .info {
+    width: auto;
+    min-height: auto;
+    margin: 40% -80% -900% 20%;
+    font-size: xx-small;
+  }
+
+  .h2 {
+    font-size: x-small;
+  }
+}
+
+@media only screen and (width >= 300px) and (width <= 390px) {
+  .contact-info {
+    width: 500px;
+    min-height: auto;
+    margin: 30% 20% 20% -1%;
+  }
+
+  .info {
+    width: auto;
+    min-height: auto;
+    margin: 0% -40% -50% 17%;
+  }
+}
+
+@media only screen and (width >= 390px) and (width <= 500px) {
+  .contact-info {
+    width: auto;
+    min-height: auto;
+    margin: 30% 20% 20% -1%;
+  }
+
+  .info {
+    width: auto;
+    min-height: auto;
+    margin: 0% -40% -50% 17%;
+  }
+}
+
+@media only screen and (width >= 500px) and (width <= 600px) {
+  .contact-info {
+    width: auto;
+    min-height: auto;
+    margin: 20% 10% 10% 15%;
+  }
+
+  .info {
+    width: auto;
+    min-height: auto;
+    margin: 0% -40% -50% 17%;
+  }
+}
+
+@media only screen and (width >= 600px) and (width <= 768px) {
+  .contact-me {
+    grid-template-columns: auto;
+    gap: 5px;
+    width: auto;
+    min-height: auto;
+    margin: 35% 10% 10% 1%;
+  }
+
+  .contact-info {
+    width: auto;
+    min-height: auto;
+    margin: 25% 10% 10% 15%;
+  }
+
+  .info {
+    width: auto;
+    min-height: auto;
+    margin: 10% -45% -90% 17%;
+  }
+}
+
+@media only screen and (width >= 768px) and (width <= 992px) {
+  .contact-info {
+    width: auto;
+    min-height: auto;
+    margin: 10% 10% 10% 15%;
+  }
+
+  .info {
+    width: auto;
+    min-height: auto;
+    margin: -10% -40% -40% 18%;
+  }
+}
+
+@media only screen and (width >= 992px) and (width <= 1200px) {
+  .contact-info {
+    width: 300px;
+    min-height: 200px;
+    margin: 5% 55% 100% 10%;
+  }
+
+  .info {
+    width: auto;
+    min-height: auto;
+    margin: 4% -40% -10% 15%;
+  }
+}
+
 .bucket-img {
   width: 200px;
   height: auto;
@@ -476,4 +599,4 @@ tfoot {
     font-size: 22px;
   }
 }
-/*# sourceMappingURL=index.748ad148.css.map */
+/*# sourceMappingURL=about.748ad148.css.map */
