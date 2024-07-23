@@ -15,24 +15,33 @@
     </head>
     <body>
         <header class="page-header"><!--width= "32px auto"--> 
-            <img src="./img/wDragonLogo.png" alt="tech icon" class="page-header__item-img">
+            <nav class="navbar navbar-expand-lg main-navigation page-header__item"> 
+            <a class="navbar-brand" href="index.html">
+                <img src="./img/wDragonLogo.png" alt="tech icon" class="page-header__item-img">
+            </a>
             <h1 class="page-header__item"> Check Out My Work</h1>
-            <nav class="navbar main-navigation page-header__item"> 
-                <ul role="menubar" class="navigation-list">
-                    <li role="presentation">
-                        <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+               
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul role="menubar" class="navbar-nav navigation-list">
+                    <li class="nav-item active" role="presentation">
+                        <a href="index.html" role="menuitem" class="nav-link navigation-list__item navigation-list__item--active">Home</a>
                     </li>
-                    <li role="presentation">
-                        <a href="about.html#about" class="navigation-list__item" role="menuitem" >About Me</a>
+                    <li class="nav-item" role="presentation">
+                        <a href="about.html#about" class="nav-link navigation-list__item" role="menuitem" >About Me</a>
                         <!--link for direct navigation: <a href="#about>Got to About</a>"-->
                     </li>
-                    <li role="presentation">
-                        <a href="contact.html" class="navigation-list__item" role="menuitem" >Contact</a>
+                    <li class="nav-item" role="presentation">
+                        <a href="contact.html" class="nav-link navigation-list__item" role="menuitem" >Contact</a>
                     </li>
-                    <li role="presentation">
-                        <a href="work.html" class="navigation-list__item" role="menuitem" >Work</a>
+                    <li class="nav-item" role="presentation">
+                        <a href="work.html" class="nav-link navigation-list__item" role="menuitem" >Work</a>
                     </li>
                 </ul>
+            </div>
             </nav>
         </header>
     <!--Main content-->
