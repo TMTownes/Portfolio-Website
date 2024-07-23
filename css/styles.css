@@ -576,8 +576,8 @@ nav.main-navigation.page-header__item {
     }
 }
 /* Extra small devices (portrait tablets and small phones, between 390px and 500px)*/
-@media only screen and (min-width:390px) and (max-width:500px){
-    .contact-info {
+/* @media only screen and (min-width:390px) and (max-width:500px){ */
+    /* .contact-info { */
         /* margin: 30% 20% 20% -1%; 
         display: flex;
         position: relative;
